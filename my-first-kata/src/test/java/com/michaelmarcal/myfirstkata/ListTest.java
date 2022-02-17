@@ -29,14 +29,11 @@ public class ListTest {
 
 
         List<Integer> expectedAsc = Arrays.asList(1, 2, 3, 5, 9);
-
-
         Assertions.assertEquals(expectedAsc, myList);
 
         // Sort list descending
 
         List<Integer> expectedDesc = Arrays.asList(9, 5, 3, 2, 1);
-
         Assertions.assertEquals(expectedDesc, myList);
     }
 
@@ -48,7 +45,6 @@ public class ListTest {
         // Sort list ascending by the string's integer value.  i.e. "two" = 2.
 
         List<String> expected = Arrays.asList("one", "two", "three", "four", "five");
-
         Assertions.assertEquals(expected, myList);
     }
 }

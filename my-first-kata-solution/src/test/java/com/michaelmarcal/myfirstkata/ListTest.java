@@ -32,15 +32,12 @@ public class ListTest {
         Collections.sort(myList);
 
         List<Integer> expectedAsc = Arrays.asList(1, 2, 3, 5, 9);
-
-
         Assertions.assertEquals(expectedAsc, myList);
 
         // Sort list descending
         Collections.sort(myList, Collections.reverseOrder());
 
         List<Integer> expectedDesc = Arrays.asList(9, 5, 3, 2, 1);
-
         Assertions.assertEquals(expectedDesc, myList);
     }
 
@@ -54,7 +51,6 @@ public class ListTest {
         Collections.sort(myList, comparator);
 
         List<String> expected = Arrays.asList("1", "2", "3", "4", "5");
-
         Assertions.assertEquals(expected, myList);
     }
 }
