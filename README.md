@@ -4,7 +4,7 @@
 In an effort to practice coding, I've set up a repository to house some of my code katas that I develop over time.
 The contents of this repository will generally be a collection of code katas built using Java 17, although not necessarily
 strictly requiring Java 17 nor working through Java 17-specific features.  At the time of initialization, 17 was the latest
-LTS Java version.  Where I find it appropriate, I will include a write-up for particular exercises on the [Blog](www.michaelmarcal.com).
+LTS Java version.  Where I find it appropriate, I will include a write-up for particular exercises on the [Blog](https://michaelmarcal.com).
 
 ## Technical Details
 This project is organized as a top level maven module with individual modules per kata.
