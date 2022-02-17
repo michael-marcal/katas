@@ -1,0 +1,17 @@
+target
+build
+.maven
+.gradle
+bin
+.settings
+.classpath
+.project
+
+# IntelliJ IDEA ignores
+.idea/modules.xml
+.idea/workspace.xml
+.idea/libraries
+.idea/gradle.xml
+*.iml
+*.ipr
+*.iws
