@@ -1,6 +1,7 @@
 # Welcome to my My First Kata Solution!
 
-I'd encourage you to work through the [Kata](my-first-kata/README.md) on your own before referencing the solutions 
+I'd encourage you to work through the [Kata](https://github.com/michael-marcal/katas/blob/87c7265c6adfd9ed8cb223ebe119284c3fe61bf5/my-first-kata/README.md)
+on your own before referencing the solutions 
 implemented in this module.  As mentioned, the purpose of this Kata was to get a project and framework set up for easily 
 adding future Katas.  As such, the exercises themselves are quite basic.  Regardless, that doesn't mean the solutions
 need to be!  Remember, there is not only one solution to any problem.  The below are ones I developed and like, but
