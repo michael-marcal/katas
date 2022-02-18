@@ -40,11 +40,11 @@ public class ListTest {
     @Test
     @Tag("KATA")
     public void sortListCustom() {
-        List<String> myList = Arrays.asList("two", "five", "one", "four", "three");
+        List<String> myList = Arrays.asList("2", "5", "1", "4", "3");
 
         // Sort list ascending by the string's integer value.  i.e. "two" = 2.
 
-        List<String> expected = Arrays.asList("one", "two", "three", "four", "five");
+        List<String> expected = Arrays.asList("1", "2", "3", "4", "5");
         Assertions.assertEquals(expected, myList);
     }
 }
