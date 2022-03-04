@@ -29,12 +29,11 @@ public class PrettyPrintAppleTest {
 
         /*
           Implement and call AppleUtils.prettyPrintApple()
-          such that heavySizeStrings is a list of String values of the Apple weights for
-          the Apples which weigh more than 150.
+          such that heavySizeStrings is a list of String values of the Apple weights.
          */
         List<String> heavySizeStrings = AppleUtils.prettyPrintApple(inventory);
 
-        List<String> expectedHeavySizeStrings = Arrays.asList( "200", "155", "205" );
+        List<String> expectedHeavySizeStrings = Arrays.asList( "50", "100", "55", "105" );
         Assertions.assertEquals(expectedHeavySizeStrings, heavySizeStrings);
     }
 
@@ -50,7 +49,7 @@ public class PrettyPrintAppleTest {
          */
         List<String> weightAndColorStrings = AppleUtils.prettyPrintApple(inventory);
 
-        List<String> expectedWeightAndColorStrings = Arrays.asList( "200", "155", "205" );
+        List<String> expectedWeightAndColorStrings = Arrays.asList( "GREEN-50", "GREEN-100", "RED-55", "RED-105" );
         Assertions.assertEquals(expectedWeightAndColorStrings, weightAndColorStrings);
     }
 
@@ -62,14 +61,16 @@ public class PrettyPrintAppleTest {
         /*
           Implement and call AppleUtils.prettyPrintApple()
           such that expectedAppleSentenceStrings is a list of String values of the Apple in
-          sentence form for all Apples weighing less than 100.
+          sentence form for all Apples.
           Example sentence: "The GREEN apple weighs 50."
          */
         List<String> appleSentenceStrings = AppleUtils.prettyPrintApple(inventory);
 
         List<String> expectedAppleSentenceStrings = Arrays.asList(
                 "The GREEN apple weighs 50.",
-                "The RED apple weighs 55."
+                "The GREEN apple weighs 100.",
+                "The RED apple weighs 55.",
+                "The RED apple weighs 105."
         );
         Assertions.assertEquals(expectedAppleSentenceStrings, appleSentenceStrings);
     }
@@ -78,12 +79,8 @@ public class PrettyPrintAppleTest {
         List<Apple> inventory = new ArrayList<>();
         inventory.add( new Apple( 50, Color.GREEN));
         inventory.add( new Apple( 100, Color.GREEN));
-        inventory.add( new Apple( 150, Color.GREEN));
-        inventory.add( new Apple( 200, Color.GREEN));
         inventory.add( new Apple( 55, Color.RED));
         inventory.add( new Apple( 105, Color.RED));
-        inventory.add( new Apple( 155, Color.RED));
-        inventory.add( new Apple( 205, Color.RED));
 
         return inventory;
     }
