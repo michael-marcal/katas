@@ -1,6 +1,10 @@
 package com.michaelmarcal.modernjavainaction.chapter2;
 
+/**
+ * Primary domain class for an Apple in Kata.
+ */
 public class Apple {
+
     private int weight;
     private Color color;
 

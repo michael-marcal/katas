@@ -29,12 +29,12 @@ public class PrettyPrintAppleTest {
 
         /*
           Implement and call AppleUtils.prettyPrintApple()
-          such that heavySizeStrings is a list of String values of the Apple weights.
+          such that weightStrings is a list of String values of the Apple weights.
          */
-        List<String> heavySizeStrings = AppleUtils.prettyPrintApple(inventory);
+        List<String> weightStrings = AppleUtils.prettyPrintApple(inventory);
 
-        List<String> expectedHeavySizeStrings = Arrays.asList( "50", "100", "55", "105" );
-        Assertions.assertEquals(expectedHeavySizeStrings, heavySizeStrings);
+        List<String> expectedWeightStrings = Arrays.asList( "50", "100", "55", "105" );
+        Assertions.assertEquals(expectedWeightStrings, weightStrings);
     }
 
     @Test

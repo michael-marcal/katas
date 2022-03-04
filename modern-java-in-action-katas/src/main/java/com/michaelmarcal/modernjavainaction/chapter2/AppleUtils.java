@@ -12,7 +12,7 @@ public class AppleUtils {
      * may be modified to solve the Kata.
      *
      * @param inventory list of apples
-     * @return List<String></String>
+     * @return List<String>
      */
     public static List<String> prettyPrintApple(List<Apple> inventory ){
         return new ArrayList<>();
