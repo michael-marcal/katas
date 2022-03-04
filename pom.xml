@@ -11,6 +11,7 @@
   <modules>
     <module>my-first-kata</module>
     <module>my-first-kata-solution</module>
+    <module>modern-java-in-action-katas</module>
   </modules>
 
   <name>Katas</name>
