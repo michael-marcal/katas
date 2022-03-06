@@ -30,7 +30,7 @@ public class FilteringTest {
                 new Dish("pork", false, 800, Dish.Type.MEAT),
                 new Dish("beef", false, 700, Dish.Type.MEAT)
         );
-        Assertions.assertEquals(expected, dishes);
+        Assertions.assertArrayEquals(expected.toArray(), dishes.toArray());
     }
 
     private List<Dish> getDishes() {

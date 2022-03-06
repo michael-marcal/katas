@@ -37,5 +37,36 @@ public class Dish {
         return name;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+        if (!(o instanceof Dish ) ) {
+            return false;
+        }
+        Dish other = (Dish) o;
+        boolean isNameEquals = ( this.name == null && other.name == null )
+                || (this.name != null && this.name.equals(other.name));
+        boolean isVegetarianEquals = this.vegetarian == other.vegetarian;
+        boolean isCaloriesEquals = this.calories == other.calories;
+        boolean isTypeEquals = ( this.type == null && other.type == null )
+                || (this.type != null && this.type.equals(other.type));
+        return isNameEquals && isVegetarianEquals && isCaloriesEquals && isTypeEquals;
+    }
+
+    @Override
+    public final int hashCode() {
+        int result = 17;
+        if (name != null){
+            result = 31 * result + name.hashCode();
+        }
+        result = 31 * result + Boolean.hashCode(vegetarian);
+        result = 31 * result + calories;
+        if( type != null ) {
+            result = 31 * result + type.hashCode();
+        }
+        return result;
+    }
+
     public enum Type { MEAT, FISH, OTHER }
 }
