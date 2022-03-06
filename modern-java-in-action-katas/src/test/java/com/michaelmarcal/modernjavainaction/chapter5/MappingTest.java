@@ -7,7 +7,6 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Set;
 
 /**
  * This Kata has been written around Quiz 5.2 of Modern Java in Action.
@@ -41,10 +40,17 @@ public class MappingTest {
             another number from list2.  Order doesn't matter, meaning [1, 3] is the same as [3, 1].  The pairs can
             be represented as an array of 2 elements.
          */
-        List<Integer[]> result = new ArrayList<>();
+        List<int[]> result = new ArrayList<>();
 
-        List<Integer[]> expected = Arrays.asList(new Integer[]{1,3}, new Integer[] {1,4}, new Integer[] {2,3},
-                new Integer[] {2,4}, new Integer[] {3,3}, new Integer[] {3,4});
-        Assertions.assertEquals(Set.copyOf(expected), Set.copyOf(result));
+        List<int[]> expected = Arrays.asList(new int[]{1,3}, new int[] {1,4}, new int[] {2,3},
+                new int[] {2,4}, new int[] {3,3}, new int[] {3,4});
+        assertPairsAreEqual(expected, result);
+    }
+
+    private void assertPairsAreEqual( List<int[]> expected, List<int[]> result ) {
+        Assertions.assertEquals(expected.size(), result.size());
+        for (int i = 0; i < expected.size(); i++) {
+            Assertions.assertArrayEquals(expected.get(i), result.get(i));
+        }
     }
 }
