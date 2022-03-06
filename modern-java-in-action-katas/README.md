@@ -32,9 +32,33 @@ There are 3 test cases in the Kata which all use the same method, ```AppleUtils.
 will implement that method in a way that all 3 cases can be solved with the same implementation.
 
 ### FilteringTest
-This Kata has been written around Quiz 5.1 of Modern java in Action.
+This Kata has been written around Quiz 5.1 of Modern Java in Action.
 
 This Kata operates on a List of Dishes and should be solved using the Streams API.  The domain class of Dish is included
 and shouldn't need to be modified for this Kata.
 
 The goal is to return a List of the first 2 MEAT dishes in the original List using the Streams API.
+
+### MappingTest
+This Kata has been written around Quiz 5.2 of Modern Java in Action.
+
+It actually has 3 katas built in, which are implemented as 3 test methods explained below:
+
+#### test_Squares
+Given a list of integers, return a list of their squares.  
+
+For example, `[1, 2, 3] -> [1, 4, 9]`
+
+#### test_Pairs
+Given 2 lists of integers, return a list of all pairs of numbers.  A pair is 1 number from list1, and
+another number from list2.  Order doesn't matter, meaning [1, 3] is the same as [3, 1].  The pairs can
+be represented as an array of 2 elements.
+
+For example, `[1, 2, 3] [4, 5] -> [[1,4], [1,5], [2,4], [2,5], [3,4], [3,5]`
+
+#### test_PairsDivisibleBy3
+This is an extension of test_Pairs above.
+Given 2 lists of numbers, return a list of all pairs of numbers whose sum is divisible by 3.
+The definition of pair is the same as above.
+
+For example,  `[1, 2, 3] [4, 5] -> [[1,5], [2,4]]`
