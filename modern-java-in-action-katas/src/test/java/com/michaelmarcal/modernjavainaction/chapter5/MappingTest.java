@@ -47,6 +47,23 @@ public class MappingTest {
         assertPairsAreEqual(expected, result);
     }
 
+    @Test
+    @Tag("KATA")
+    public void test_PairsDivisibleBy3() {
+        List<Integer> list1 = Arrays.asList( 1, 2, 3 );
+        List<Integer> list2 = Arrays.asList( 3, 4 );
+
+        /*
+            This is an extension of test_Pairs above.
+            Given 2 lists of numbers, return a list of all pairs of numbers whose sum is divisible by 3.
+            The definition of pair is the same as above.
+         */
+        List<int[]> result = new ArrayList<>();
+
+        List<int[]> expected = Arrays.asList(new int[] {2,4}, new int[] {3,3});
+        assertPairsAreEqual(expected, result);
+    }
+
     private void assertPairsAreEqual( List<int[]> expected, List<int[]> result ) {
         Assertions.assertEquals(expected.size(), result.size());
         for (int i = 0; i < expected.size(); i++) {
