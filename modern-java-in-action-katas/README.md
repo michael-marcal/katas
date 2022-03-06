@@ -62,3 +62,12 @@ Given 2 lists of numbers, return a list of all pairs of numbers whose sum is div
 The definition of pair is the same as above.
 
 For example,  `[1, 2, 3] [4, 5] -> [[1,5], [2,4]]`
+
+### ReducingTest
+This Kata has been written around Quiz 5.3 of Modern Java in Action.
+
+This Kata operates on a List of Dishes and should be solved using the Streams API.  The domain class of Dish is included
+and shouldn't need to be modified for this Kata.
+
+The goal is to return the count of dishes in the stream using `map` and `reduce`.  The List has a size() method,
+which will return the same value, but shouldn't be used in this Kata.
