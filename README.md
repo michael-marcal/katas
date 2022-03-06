@@ -48,6 +48,7 @@ Supporting code will be housed in /src/main/java/com/michaelmarcal/ directory of
 Documentation to individual Katas will be included here.
 
 * [My First Kata](my-first-kata/README.md)
+* [Modern Java in Action Katas](modern-java-in-action-katas/README.md)
 
 
 ## SDK

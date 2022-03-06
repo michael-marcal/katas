@@ -30,3 +30,11 @@ Katas.  If desired, the method signature may be changed.
 
 There are 3 test cases in the Kata which all use the same method, ```AppleUtils.prettyPrintApple()```, so a good solution
 will implement that method in a way that all 3 cases can be solved with the same implementation.
+
+### FilteringTest
+This Kata has been written around Quiz 5.1 of Modern java in Action.
+
+This Kata operates on a List of Dishes and should be solved using the Streams API.  The domain class of Dish is included
+and shouldn't need to be modified for this Kata.
+
+The goal is to return a List of the first 2 MEAT dishes in the original List using the Streams API.
