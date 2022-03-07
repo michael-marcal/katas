@@ -71,3 +71,18 @@ and shouldn't need to be modified for this Kata.
 
 The goal is to return the count of dishes in the stream using `map` and `reduce`.  The List has a size() method,
 which will return the same value, but shouldn't be used in this Kata.
+
+### TradersAndTransactionsTest
+The Domain consists of Trader and Transaction classes, included. 
+The test methods below aim to answer the questions below given a list of Transactions.
+The goal is to make the tests pass.  You should not need to modify the Domain classes,
+although are free to add any helper classes/methods if desired.
+
+1. Find all transactions in the year 2011 and sort them by value (small to high)
+2. What are all the unique cities where the traders work?
+3. Find all traders from Cambridge and sort them by name.
+4. Return a string of all traders' names sorted alphabetically.
+5. Are any traders based in Milan?
+6. Return the values of all transactions from the traders living in Cambridge.
+7. What's the highest value of all the transactions?
+8. Find the transaction with the smallest value.
