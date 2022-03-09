@@ -86,3 +86,16 @@ although are free to add any helper classes/methods if desired.
 6. Return the values of all transactions from the traders living in Cambridge.
 7. What's the highest value of all the transactions?
 8. Find the transaction with the smallest value.
+
+### FibonacciTest
+This Kata has been written around Quiz 5.4 of Modern Java in Action.
+
+Using an `int[]` to represent a tuple create a list of the first 20 tuples in the Fibonacci Tuple series
+using `Stream.iterate()`.
+
+The series is a number and its successor in the Fibonacci series.  
+0 is the first number in the Fibonacci series, and 1 is its successor, hence (0,1).
+
+1 is the next number in the Fibonacci series, and 1 is its successor, so (1,1).
+
+Ex. (0,1),(1,1),(1,2),(2,3),(3,5),(5,8)...
